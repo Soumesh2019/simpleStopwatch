@@ -49,7 +49,7 @@ const pauseTimer = () => {
 const lapTimer = () => {
   lapArray.push(min + ":" + sec + ":" + milli);
   let h2 = document.createElement("h2");
-  h2.style.marginTop = "1%";
+  h2.setAttribute("class", "laptimes");
   h2.innerHTML = lapArray[lapArray.length - 1];
   document.getElementById("laptimer").prepend(h2);
 };

@@ -1,0 +1,74 @@
+body {
+  background-color: lightblue;
+  font-size: 5rem;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+div.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+}
+
+/* div.main {
+  font-size: 5rem;
+} */
+
+div.buttons {
+  text-align: center;
+}
+
+button#start:hover {
+  background-color: lightpink;
+}
+
+button#lap:hover {
+  background-color: lightgoldenrodyellow;
+}
+
+button#reset:hover {
+  background-color: lightsalmon;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+div#laptimer {
+  position: absolute;
+  margin-top: 5%;
+  height: 45vh;
+  bottom: 0;
+  overflow-y: auto;
+  padding: 40px;
+  background-color: lightgreen;
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    font-size: 3rem;
+  }
+  button {
+    font-size: 1rem;
+  }
+  div#laptimer {
+    height: 65vh;
+  }
+}
